@@ -1,9 +1,7 @@
 # CPX Seeders
 
 Descripción:
-Módulo de seeders incrementales para mantener el control de seeders ejecutados a través del tiempo.
-El objetivo es que puedas agregar nuevos registros en la base de datos sin comprometer la integridad de los datos que ya existen.
-Es sólamente aditivo, no permite rollbacks.
+Olvídate de los db:seed que duplican registros o del miedo a correr seeders en producción. Este módulo añade una capa de seguimiento a tus seeders; si ya se ejecutó, no se vuelve a correr. Es el control de versiones que tus datos iniciales necesitaban.
 
 El módulo está basado en la estructura de migraciones de laravel para que sea simple de entender.
 

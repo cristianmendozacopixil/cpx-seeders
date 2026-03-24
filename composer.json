@@ -1,6 +1,6 @@
 {
     "name": "cpxproject/seeders",
-    "description": "Incremental seeders",
+    "description": "Run your seeders like migrations: once, safely, and tracked.",
     "type": "library",
     "license": "MIT",
     "authors": [
