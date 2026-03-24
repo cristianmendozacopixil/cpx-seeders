@@ -1,0 +1,30 @@
+{
+    "name": "cpx/seeders",
+    "description": "Incremental seeders",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cristian",
+            "email": "khris.cmd@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+        "illuminate/console": "^8.0|^9.0|^10.0|^11.0",
+        "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cpx\\Seeders\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cpx\\Seeders\\CpxSeedersServiceProvider"
+            ]
+        }
+    }
+}
