@@ -16,14 +16,14 @@ The module is based on the laravel migrations structure to make it simple to und
 
 ### Command Mapping (The Laravel Way)
 #### Seeders-only commands:
-Similarities in operation with laravel migrations:
+Similarities in operation with laravel migrations:\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed:install``` (Not exist in laravel)\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan make:cpx-seeder <name>``` = ```php artisan make:migration <name>```\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed``` = ```php artisan migrate```\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed:status``` = ```php artisan migrate:status```
 
 #### Laravel Migrations + CPX Seeders:
-These commands run laravel migrations and cpx-seeders in one command.
+These commands run laravel migrations and cpx-seeders in one command.\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-migrate --seed``` = ```php artisan migrate && php artisan cpx-seed```\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-migrate:fresh --seed``` = ```php artisan migrate:fresh && php artisan cpx-seed```\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-migrate:status``` = ```php artisan migrate:status && php artisan cpx-seed:status```
