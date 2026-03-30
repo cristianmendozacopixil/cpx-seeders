@@ -42,7 +42,7 @@ Path: **database/cpx_seeders/YYYY_MM_DD_HHMMSS_user_seeder.php**
 ```php
 <?php
 
-namespace Database\Seeders;
+namespace Database\CpxSeeders;
 
 use Illuminate\Database\Seeder;
 
