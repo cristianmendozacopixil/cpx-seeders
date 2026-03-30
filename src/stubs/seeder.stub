@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\CpxProjectSeeders;
+namespace Database\CpxSeeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
