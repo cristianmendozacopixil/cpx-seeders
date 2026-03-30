@@ -13,7 +13,7 @@ class SeederInstall extends GeneratorCommand
 
 	public function handle()
 	{
-		$name = "2020_06_22_000000_create_cpx_seeders_table.php";
+		$name = date('Y_m_d_His')."_create_cpx_seeders_table.php";
 		$directory = $this->laravel['path.database'].'/migrations/';
 		//The function makeDirectory accepts a path with file name to create his directory
 		$this->makeDirectory($directory.$name);
