@@ -17,7 +17,6 @@ The module is based on the laravel migrations structure to make it simple to und
 ### Command Mapping (The Laravel Way)
 #### Seeders-only commands:
 Similarities in operation with laravel migrations:\
-&nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed:install``` (Not exist in laravel)\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan make:cpx-seeder <name>``` = ```php artisan make:migration <name>```\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed``` = ```php artisan migrate```\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed:status``` = ```php artisan migrate:status```
@@ -29,13 +28,16 @@ These commands run laravel migrations and cpx-seeders in one command.\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-migrate:status``` = ```php artisan migrate:status && php artisan cpx-seed:status```
 
 ## Usage
-1. If you don't have the incremental seeders module, create the migration file for cpx-seeders.\
-&nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed:install```
-2. Create the table that registers the seeders in the database.\
+1. Install this library.\
+&nbsp;&nbsp;&nbsp;&nbsp;```composer require cpxproject/seeders```
+2. Run migrations to create the table that registers the seeders in the database.\
 &nbsp;&nbsp;&nbsp;&nbsp;```php artisan migrate```
-3. Create seeder file. By default it is created in the **database/cpx_seeders** directory.\
-&nbsp;&nbsp;&nbsp;&nbsp;```php artisan make:cpx-seeder User```
-4. Run the seeder with ```php artisan cpx-seed```. This command only runs the seeders that have not been executed.
+3. Now you can start creating your seeders files.\
+&nbsp;&nbsp;&nbsp;&nbsp;```php artisan make:cpx-seeder User```\
+CPXseeders are created at **database/cpx_seeders** directory.
+4. After you filled your seeders files, execute the command.\
+&nbsp;&nbsp;&nbsp;&nbsp;```php artisan cpx-seed```\
+This command only runs the seeders that have not been executed.
 
 ## Example
 Path: **database/cpx_seeders/YYYY_MM_DD_HHMMSS_user_seeder.php**
