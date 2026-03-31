@@ -6,7 +6,6 @@ Forget about db:seed that duplicate records or the fear of running seeders in pr
 The module is based on the laravel migrations structure to make it simple to understand.
 
 ## List of commands:
-```php artisan cpx-seed:install```\
 ```php artisan make:cpx-seeder <name>```\
 ```php artisan cpx-seed```\
 ```php artisan cpx-seed:status```\
